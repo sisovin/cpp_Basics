@@ -114,6 +114,34 @@ To use Visual Studio Code for C++ programming, ensure you have the necessary ext
    git push -u origin main
    ```
 
+5. …or push an existing repository from the command line
+
+### Update the Existing Remote
+
+```sh
+git remote set-url origin https://github.com/username/cpp_Basics.git
+```
+
+### Remove the Existing Remote and Add Again
+
+1. Remove the existing remote:
+
+   ```sh
+   git remote remove origin
+   ```
+
+2. Add the new remote:
+
+   ```sh
+   git remote add origin https://github.com/username/cpp_Basics.git
+   ```
+
+Choose either method to resolve the issue, and then you can proceed with pushing your repository:
+
+```sh
+git push -u origin main
+```
+
 ## Troubleshooting Common Issues
 
 - **Compiler Not Found**: Ensure `g++` is added to the PATH environment variable.
